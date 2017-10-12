@@ -9,12 +9,12 @@
 import Foundation
 
 public class Events: NSObject {
-    
-    public var EventID: Int?
-    public var EventName: NSString?
-    public var EventIcon: NSString?
-    public var KeyInfo: NSString?
-    public var BasicsInfo: NSString?
-    public var OlympicsInfo: NSString?
+
+    public var eventId: NSString?
+    public var eventName: NSString?
+    public var eventIcon: NSString?
+    public var keyInfo: NSString?
+    public var basicsInfo: NSString?
+    public var olympicsInfo: NSString?
     
 }

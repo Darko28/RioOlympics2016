@@ -10,11 +10,10 @@ import Foundation
 
 public class Schedule: NSObject {
     
-    public var ScheduleID: Int?
-    public var GameDate: NSString?
-    public var GameTime: NSString?
-    public var GameInfo: NSString?
-    
-    public var Event: Events?
+    public var scheduleId: Int?
+    public var gameDate: NSString?
+    public var gameTime: NSString?
+    public var gameInfo: NSString?
+    public var event: Events?
     
 }

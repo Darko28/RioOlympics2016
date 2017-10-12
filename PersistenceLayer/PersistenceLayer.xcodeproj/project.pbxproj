@@ -7,165 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2CE843C1F8F525400BD5ACA /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */; };
-		A2CE84411F8F525400BD5ACA /* PersistenceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84401F8F525400BD5ACA /* PersistenceLayerTests.swift */; };
-		A2CE84431F8F525400BD5ACA /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CE84351F8F525300BD5ACA /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2CE84AD1F8F5A2100BD5ACA /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2CE84AB1F8F5A2100BD5ACA /* DBConfig.plist */; };
-		A2CE84AE1F8F5A2100BD5ACA /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A2CE84AC1F8F5A2100BD5ACA /* create_load.sql */; };
-		A2CE84B01F8F5DD800BD5ACA /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84AF1F8F5DD800BD5ACA /* Events.swift */; };
-		A2CE84B21F8F5E6800BD5ACA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */; };
-		A2CE84BA1F8F5F8100BD5ACA /* EventsDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84B91F8F5F8100BD5ACA /* EventsDAOTests.swift */; };
-		A2CE84BC1F8F5F8100BD5ACA /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */; };
-		A2CE84C21F8F628400BD5ACA /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84AF1F8F5DD800BD5ACA /* Events.swift */; };
-		A2CE84C31F8F628800BD5ACA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */; };
-		A2CE84C51F8F62D300BD5ACA /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */; };
-		A2CE84C61F8F62D300BD5ACA /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */; };
+		A299E1A51F8F8B470089AEE9 /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A299E1A31F8F8B470089AEE9 /* DBConfig.plist */; };
+		A299E1A61F8F8B470089AEE9 /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A299E1A41F8F8B470089AEE9 /* create_load.sql */; };
+		A299E1A81F8F8C230089AEE9 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1A71F8F8C230089AEE9 /* Events.swift */; };
+		A299E1AA1F8F8C920089AEE9 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1A91F8F8C920089AEE9 /* Schedule.swift */; };
+		A299E1AC1F8F8D0F0089AEE9 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AB1F8F8D0F0089AEE9 /* BaseDAO.swift */; };
+		A299E1AE1F8F8E0B0089AEE9 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */; };
+		A299E1B01F8F97FC0089AEE9 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AF1F8F97FC0089AEE9 /* EventsDAO.swift */; };
+		A2CB9A191F8F89C6003B444A /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */; };
+		A2CB9A1E1F8F89C6003B444A /* PersistenceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB9A1D1F8F89C6003B444A /* PersistenceLayerTests.swift */; };
+		A2CB9A201F8F89C6003B444A /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CB9A121F8F89C6003B444A /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2CE843D1F8F525400BD5ACA /* PBXContainerItemProxy */ = {
+		A2CB9A1A1F8F89C6003B444A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A2CE84291F8F525300BD5ACA /* Project object */;
+			containerPortal = A2CB9A061F8F89C6003B444A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2CE84311F8F525300BD5ACA;
-			remoteInfo = PersistenceLayer;
-		};
-		A2CE84BD1F8F5F8100BD5ACA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A2CE84291F8F525300BD5ACA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A2CE84311F8F525300BD5ACA;
+			remoteGlobalIDString = A2CB9A0E1F8F89C6003B444A;
 			remoteInfo = PersistenceLayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2CE84351F8F525300BD5ACA /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
-		A2CE84361F8F525300BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2CE843B1F8F525400BD5ACA /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2CE84401F8F525400BD5ACA /* PersistenceLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerTests.swift; sourceTree = "<group>"; };
-		A2CE84421F8F525400BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2CE84AB1F8F5A2100BD5ACA /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
-		A2CE84AC1F8F5A2100BD5ACA /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
-		A2CE84AF1F8F5DD800BD5ACA /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
-		A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		A2CE84B71F8F5F8100BD5ACA /* EventsDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2CE84B91F8F5F8100BD5ACA /* EventsDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDAOTests.swift; sourceTree = "<group>"; };
-		A2CE84BB1F8F5F8100BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		A299E1A31F8F8B470089AEE9 /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		A299E1A41F8F8B470089AEE9 /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		A299E1A71F8F8C230089AEE9 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		A299E1A91F8F8C920089AEE9 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A299E1AB1F8F8D0F0089AEE9 /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		A299E1AF1F8F97FC0089AEE9 /* EventsDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDAO.swift; sourceTree = "<group>"; };
+		A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CB9A121F8F89C6003B444A /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
+		A2CB9A131F8F89C6003B444A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CB9A181F8F89C6003B444A /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CB9A1D1F8F89C6003B444A /* PersistenceLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerTests.swift; sourceTree = "<group>"; };
+		A2CB9A1F1F8F89C6003B444A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A2CE842E1F8F525300BD5ACA /* Frameworks */ = {
+		A2CB9A0B1F8F89C6003B444A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CE84381F8F525400BD5ACA /* Frameworks */ = {
+		A2CB9A151F8F89C6003B444A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE843C1F8F525400BD5ACA /* PersistenceLayer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2CE84B41F8F5F8100BD5ACA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2CE84BC1F8F5F8100BD5ACA /* PersistenceLayer.framework in Frameworks */,
+				A2CB9A191F8F89C6003B444A /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A2CE84281F8F525300BD5ACA = {
+		A299E1A21F8F8B470089AEE9 /* DBFile */ = {
 			isa = PBXGroup;
 			children = (
-				A2CE84AA1F8F5A2100BD5ACA /* DBFile */,
-				A2CE84341F8F525300BD5ACA /* PersistenceLayer */,
-				A2CE843F1F8F525400BD5ACA /* PersistenceLayerTests */,
-				A2CE84B81F8F5F8100BD5ACA /* EventsDAOTests */,
-				A2CE84331F8F525300BD5ACA /* Products */,
+				A299E1A31F8F8B470089AEE9 /* DBConfig.plist */,
+				A299E1A41F8F8B470089AEE9 /* create_load.sql */,
+			);
+			path = DBFile;
+			sourceTree = SOURCE_ROOT;
+		};
+		A2CB9A051F8F89C6003B444A = {
+			isa = PBXGroup;
+			children = (
+				A2CB9A111F8F89C6003B444A /* PersistenceLayer */,
+				A2CB9A1C1F8F89C6003B444A /* PersistenceLayerTests */,
+				A2CB9A101F8F89C6003B444A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A2CE84331F8F525300BD5ACA /* Products */ = {
+		A2CB9A101F8F89C6003B444A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */,
-				A2CE843B1F8F525400BD5ACA /* PersistenceLayerTests.xctest */,
-				A2CE84B71F8F5F8100BD5ACA /* EventsDAOTests.xctest */,
+				A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */,
+				A2CB9A181F8F89C6003B444A /* PersistenceLayerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2CE84341F8F525300BD5ACA /* PersistenceLayer */ = {
+		A2CB9A111F8F89C6003B444A /* PersistenceLayer */ = {
 			isa = PBXGroup;
 			children = (
-				A2CE84351F8F525300BD5ACA /* PersistenceLayer.h */,
-				A2CE84361F8F525300BD5ACA /* Info.plist */,
-				A2CE84AF1F8F5DD800BD5ACA /* Events.swift */,
-				A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */,
-				A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */,
+				A299E1A21F8F8B470089AEE9 /* DBFile */,
+				A2CB9A121F8F89C6003B444A /* PersistenceLayer.h */,
+				A2CB9A131F8F89C6003B444A /* Info.plist */,
+				A299E1A71F8F8C230089AEE9 /* Events.swift */,
+				A299E1A91F8F8C920089AEE9 /* Schedule.swift */,
+				A299E1AB1F8F8D0F0089AEE9 /* BaseDAO.swift */,
+				A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */,
+				A299E1AF1F8F97FC0089AEE9 /* EventsDAO.swift */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";
 		};
-		A2CE843F1F8F525400BD5ACA /* PersistenceLayerTests */ = {
+		A2CB9A1C1F8F89C6003B444A /* PersistenceLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2CE84401F8F525400BD5ACA /* PersistenceLayerTests.swift */,
-				A2CE84421F8F525400BD5ACA /* Info.plist */,
+				A2CB9A1D1F8F89C6003B444A /* PersistenceLayerTests.swift */,
+				A2CB9A1F1F8F89C6003B444A /* Info.plist */,
 			);
 			path = PersistenceLayerTests;
-			sourceTree = "<group>";
-		};
-		A2CE84AA1F8F5A2100BD5ACA /* DBFile */ = {
-			isa = PBXGroup;
-			children = (
-				A2CE84AB1F8F5A2100BD5ACA /* DBConfig.plist */,
-				A2CE84AC1F8F5A2100BD5ACA /* create_load.sql */,
-			);
-			name = DBFile;
-			path = ../DBFile;
-			sourceTree = "<group>";
-		};
-		A2CE84B81F8F5F8100BD5ACA /* EventsDAOTests */ = {
-			isa = PBXGroup;
-			children = (
-				A2CE84B91F8F5F8100BD5ACA /* EventsDAOTests.swift */,
-				A2CE84BB1F8F5F8100BD5ACA /* Info.plist */,
-			);
-			path = EventsDAOTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A2CE842F1F8F525300BD5ACA /* Headers */ = {
+		A2CB9A0C1F8F89C6003B444A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE84431F8F525400BD5ACA /* PersistenceLayer.h in Headers */,
+				A2CB9A201F8F89C6003B444A /* PersistenceLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A2CE84311F8F525300BD5ACA /* PersistenceLayer */ = {
+		A2CB9A0E1F8F89C6003B444A /* PersistenceLayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2CE84461F8F525400BD5ACA /* Build configuration list for PBXNativeTarget "PersistenceLayer" */;
+			buildConfigurationList = A2CB9A231F8F89C6003B444A /* Build configuration list for PBXNativeTarget "PersistenceLayer" */;
 			buildPhases = (
-				A2CE842D1F8F525300BD5ACA /* Sources */,
-				A2CE842E1F8F525300BD5ACA /* Frameworks */,
-				A2CE842F1F8F525300BD5ACA /* Headers */,
-				A2CE84301F8F525300BD5ACA /* Resources */,
+				A2CB9A0A1F8F89C6003B444A /* Sources */,
+				A2CB9A0B1F8F89C6003B444A /* Frameworks */,
+				A2CB9A0C1F8F89C6003B444A /* Headers */,
+				A2CB9A0D1F8F89C6003B444A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -173,107 +144,77 @@
 			);
 			name = PersistenceLayer;
 			productName = PersistenceLayer;
-			productReference = A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */;
+			productReference = A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2CE843A1F8F525400BD5ACA /* PersistenceLayerTests */ = {
+		A2CB9A171F8F89C6003B444A /* PersistenceLayerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2CE84491F8F525400BD5ACA /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
+			buildConfigurationList = A2CB9A261F8F89C6003B444A /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
 			buildPhases = (
-				A2CE84371F8F525400BD5ACA /* Sources */,
-				A2CE84381F8F525400BD5ACA /* Frameworks */,
-				A2CE84391F8F525400BD5ACA /* Resources */,
+				A2CB9A141F8F89C6003B444A /* Sources */,
+				A2CB9A151F8F89C6003B444A /* Frameworks */,
+				A2CB9A161F8F89C6003B444A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2CE843E1F8F525400BD5ACA /* PBXTargetDependency */,
+				A2CB9A1B1F8F89C6003B444A /* PBXTargetDependency */,
 			);
 			name = PersistenceLayerTests;
 			productName = PersistenceLayerTests;
-			productReference = A2CE843B1F8F525400BD5ACA /* PersistenceLayerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A2CE84B61F8F5F8100BD5ACA /* EventsDAOTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A2CE84BF1F8F5F8100BD5ACA /* Build configuration list for PBXNativeTarget "EventsDAOTests" */;
-			buildPhases = (
-				A2CE84B31F8F5F8100BD5ACA /* Sources */,
-				A2CE84B41F8F5F8100BD5ACA /* Frameworks */,
-				A2CE84B51F8F5F8100BD5ACA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A2CE84BE1F8F5F8100BD5ACA /* PBXTargetDependency */,
-			);
-			name = EventsDAOTests;
-			productName = EventsDAOTests;
-			productReference = A2CE84B71F8F5F8100BD5ACA /* EventsDAOTests.xctest */;
+			productReference = A2CB9A181F8F89C6003B444A /* PersistenceLayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A2CE84291F8F525300BD5ACA /* Project object */ = {
+		A2CB9A061F8F89C6003B444A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Darko;
 				TargetAttributes = {
-					A2CE84311F8F525300BD5ACA = {
+					A2CB9A0E1F8F89C6003B444A = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					A2CE843A1F8F525400BD5ACA = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-					};
-					A2CE84B61F8F5F8100BD5ACA = {
+					A2CB9A171F8F89C6003B444A = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = A2CE842C1F8F525300BD5ACA /* Build configuration list for PBXProject "PersistenceLayer" */;
+			buildConfigurationList = A2CB9A091F8F89C6003B444A /* Build configuration list for PBXProject "PersistenceLayer" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A2CE84281F8F525300BD5ACA;
-			productRefGroup = A2CE84331F8F525300BD5ACA /* Products */;
+			mainGroup = A2CB9A051F8F89C6003B444A;
+			productRefGroup = A2CB9A101F8F89C6003B444A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2CE84311F8F525300BD5ACA /* PersistenceLayer */,
-				A2CE843A1F8F525400BD5ACA /* PersistenceLayerTests */,
-				A2CE84B61F8F5F8100BD5ACA /* EventsDAOTests */,
+				A2CB9A0E1F8F89C6003B444A /* PersistenceLayer */,
+				A2CB9A171F8F89C6003B444A /* PersistenceLayerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A2CE84301F8F525300BD5ACA /* Resources */ = {
+		A2CB9A0D1F8F89C6003B444A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE84AE1F8F5A2100BD5ACA /* create_load.sql in Resources */,
-				A2CE84AD1F8F5A2100BD5ACA /* DBConfig.plist in Resources */,
+				A299E1A61F8F8B470089AEE9 /* create_load.sql in Resources */,
+				A299E1A51F8F8B470089AEE9 /* DBConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CE84391F8F525400BD5ACA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2CE84B51F8F5F8100BD5ACA /* Resources */ = {
+		A2CB9A161F8F89C6003B444A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -283,52 +224,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A2CE842D1F8F525300BD5ACA /* Sources */ = {
+		A2CB9A0A1F8F89C6003B444A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE84B21F8F5E6800BD5ACA /* Schedule.swift in Sources */,
-				A2CE84B01F8F5DD800BD5ACA /* Events.swift in Sources */,
-				A2CE84C51F8F62D300BD5ACA /* BaseDAO.swift in Sources */,
+				A299E1AA1F8F8C920089AEE9 /* Schedule.swift in Sources */,
+				A299E1A81F8F8C230089AEE9 /* Events.swift in Sources */,
+				A299E1AC1F8F8D0F0089AEE9 /* BaseDAO.swift in Sources */,
+				A299E1AE1F8F8E0B0089AEE9 /* DBHelper.swift in Sources */,
+				A299E1B01F8F97FC0089AEE9 /* EventsDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CE84371F8F525400BD5ACA /* Sources */ = {
+		A2CB9A141F8F89C6003B444A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE84411F8F525400BD5ACA /* PersistenceLayerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2CE84B31F8F5F8100BD5ACA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2CE84C31F8F628800BD5ACA /* Schedule.swift in Sources */,
-				A2CE84C21F8F628400BD5ACA /* Events.swift in Sources */,
-				A2CE84BA1F8F5F8100BD5ACA /* EventsDAOTests.swift in Sources */,
-				A2CE84C61F8F62D300BD5ACA /* BaseDAO.swift in Sources */,
+				A2CB9A1E1F8F89C6003B444A /* PersistenceLayerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2CE843E1F8F525400BD5ACA /* PBXTargetDependency */ = {
+		A2CB9A1B1F8F89C6003B444A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2CE84311F8F525300BD5ACA /* PersistenceLayer */;
-			targetProxy = A2CE843D1F8F525400BD5ACA /* PBXContainerItemProxy */;
-		};
-		A2CE84BE1F8F5F8100BD5ACA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A2CE84311F8F525300BD5ACA /* PersistenceLayer */;
-			targetProxy = A2CE84BD1F8F5F8100BD5ACA /* PBXContainerItemProxy */;
+			target = A2CB9A0E1F8F89C6003B444A /* PersistenceLayer */;
+			targetProxy = A2CB9A1A1F8F89C6003B444A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A2CE84441F8F525400BD5ACA /* Debug */ = {
+		A2CB9A211F8F89C6003B444A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -388,7 +315,7 @@
 			};
 			name = Debug;
 		};
-		A2CE84451F8F525400BD5ACA /* Release */ = {
+		A2CB9A221F8F89C6003B444A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -441,12 +368,9 @@
 			};
 			name = Release;
 		};
-		A2CE84471F8F525400BD5ACA /* Debug */ = {
+		A2CB9A241F8F89C6003B444A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -465,17 +389,12 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT)/PersistenceLayer/**";
-				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
-		A2CE84481F8F525400BD5ACA /* Release */ = {
+		A2CB9A251F8F89C6003B444A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -493,12 +412,10 @@
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/module";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT)/PersistenceLayer/**";
-				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
-		A2CE844A1F8F525400BD5ACA /* Debug */ = {
+		A2CB9A271F8F89C6003B444A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -513,7 +430,7 @@
 			};
 			name = Debug;
 		};
-		A2CE844B1F8F525400BD5ACA /* Release */ = {
+		A2CB9A281F8F89C6003B444A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -523,48 +440,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darko.PersistenceLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A2CE84C01F8F5F8100BD5ACA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCYK33GWAM;
-				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = EventsDAOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "";
-				MODULEMAP_PRIVATE_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsDAOTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A2CE84C11F8F5F8100BD5ACA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HCYK33GWAM;
-				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = EventsDAOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "";
-				MODULEMAP_PRIVATE_FILE = "";
-				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsDAOTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -573,43 +448,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2CE842C1F8F525300BD5ACA /* Build configuration list for PBXProject "PersistenceLayer" */ = {
+		A2CB9A091F8F89C6003B444A /* Build configuration list for PBXProject "PersistenceLayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2CE84441F8F525400BD5ACA /* Debug */,
-				A2CE84451F8F525400BD5ACA /* Release */,
+				A2CB9A211F8F89C6003B444A /* Debug */,
+				A2CB9A221F8F89C6003B444A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2CE84461F8F525400BD5ACA /* Build configuration list for PBXNativeTarget "PersistenceLayer" */ = {
+		A2CB9A231F8F89C6003B444A /* Build configuration list for PBXNativeTarget "PersistenceLayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2CE84471F8F525400BD5ACA /* Debug */,
-				A2CE84481F8F525400BD5ACA /* Release */,
+				A2CB9A241F8F89C6003B444A /* Debug */,
+				A2CB9A251F8F89C6003B444A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2CE84491F8F525400BD5ACA /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
+		A2CB9A261F8F89C6003B444A /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2CE844A1F8F525400BD5ACA /* Debug */,
-				A2CE844B1F8F525400BD5ACA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A2CE84BF1F8F5F8100BD5ACA /* Build configuration list for PBXNativeTarget "EventsDAOTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A2CE84C01F8F5F8100BD5ACA /* Debug */,
-				A2CE84C11F8F5F8100BD5ACA /* Release */,
+				A2CB9A271F8F89C6003B444A /* Debug */,
+				A2CB9A281F8F89C6003B444A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A2CE84291F8F525300BD5ACA /* Project object */;
+	rootObject = A2CB9A061F8F89C6003B444A /* Project object */;
 }

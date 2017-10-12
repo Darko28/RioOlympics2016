@@ -7,7 +7,7 @@
 //
 
 import XCTest
-//@testable import PersistenceLayer
+@testable import PersistenceLayer
 
 class PersistenceLayerTests: XCTestCase {
     
