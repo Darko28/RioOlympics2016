@@ -10,10 +10,27 @@
 		A2CE843C1F8F525400BD5ACA /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */; };
 		A2CE84411F8F525400BD5ACA /* PersistenceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84401F8F525400BD5ACA /* PersistenceLayerTests.swift */; };
 		A2CE84431F8F525400BD5ACA /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CE84351F8F525300BD5ACA /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2CE84AD1F8F5A2100BD5ACA /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2CE84AB1F8F5A2100BD5ACA /* DBConfig.plist */; };
+		A2CE84AE1F8F5A2100BD5ACA /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A2CE84AC1F8F5A2100BD5ACA /* create_load.sql */; };
+		A2CE84B01F8F5DD800BD5ACA /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84AF1F8F5DD800BD5ACA /* Events.swift */; };
+		A2CE84B21F8F5E6800BD5ACA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */; };
+		A2CE84BA1F8F5F8100BD5ACA /* EventsDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84B91F8F5F8100BD5ACA /* EventsDAOTests.swift */; };
+		A2CE84BC1F8F5F8100BD5ACA /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */; };
+		A2CE84C21F8F628400BD5ACA /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84AF1F8F5DD800BD5ACA /* Events.swift */; };
+		A2CE84C31F8F628800BD5ACA /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */; };
+		A2CE84C51F8F62D300BD5ACA /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */; };
+		A2CE84C61F8F62D300BD5ACA /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A2CE843D1F8F525400BD5ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CE84291F8F525300BD5ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2CE84311F8F525300BD5ACA;
+			remoteInfo = PersistenceLayer;
+		};
+		A2CE84BD1F8F5F8100BD5ACA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2CE84291F8F525300BD5ACA /* Project object */;
 			proxyType = 1;
@@ -29,6 +46,14 @@
 		A2CE843B1F8F525400BD5ACA /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CE84401F8F525400BD5ACA /* PersistenceLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerTests.swift; sourceTree = "<group>"; };
 		A2CE84421F8F525400BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CE84AB1F8F5A2100BD5ACA /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DBConfig.plist; sourceTree = "<group>"; };
+		A2CE84AC1F8F5A2100BD5ACA /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = create_load.sql; sourceTree = "<group>"; };
+		A2CE84AF1F8F5DD800BD5ACA /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		A2CE84B71F8F5F8100BD5ACA /* EventsDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CE84B91F8F5F8100BD5ACA /* EventsDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDAOTests.swift; sourceTree = "<group>"; };
+		A2CE84BB1F8F5F8100BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +72,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2CE84B41F8F5F8100BD5ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CE84BC1F8F5F8100BD5ACA /* PersistenceLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A2CE84281F8F525300BD5ACA = {
 			isa = PBXGroup;
 			children = (
+				A2CE84AA1F8F5A2100BD5ACA /* DBFile */,
 				A2CE84341F8F525300BD5ACA /* PersistenceLayer */,
 				A2CE843F1F8F525400BD5ACA /* PersistenceLayerTests */,
+				A2CE84B81F8F5F8100BD5ACA /* EventsDAOTests */,
 				A2CE84331F8F525300BD5ACA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +99,7 @@
 			children = (
 				A2CE84321F8F525300BD5ACA /* PersistenceLayer.framework */,
 				A2CE843B1F8F525400BD5ACA /* PersistenceLayerTests.xctest */,
+				A2CE84B71F8F5F8100BD5ACA /* EventsDAOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +109,9 @@
 			children = (
 				A2CE84351F8F525300BD5ACA /* PersistenceLayer.h */,
 				A2CE84361F8F525300BD5ACA /* Info.plist */,
+				A2CE84AF1F8F5DD800BD5ACA /* Events.swift */,
+				A2CE84B11F8F5E6800BD5ACA /* Schedule.swift */,
+				A2CE84C41F8F62D300BD5ACA /* BaseDAO.swift */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";
@@ -84,6 +123,25 @@
 				A2CE84421F8F525400BD5ACA /* Info.plist */,
 			);
 			path = PersistenceLayerTests;
+			sourceTree = "<group>";
+		};
+		A2CE84AA1F8F5A2100BD5ACA /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE84AB1F8F5A2100BD5ACA /* DBConfig.plist */,
+				A2CE84AC1F8F5A2100BD5ACA /* create_load.sql */,
+			);
+			name = DBFile;
+			path = ../DBFile;
+			sourceTree = "<group>";
+		};
+		A2CE84B81F8F5F8100BD5ACA /* EventsDAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE84B91F8F5F8100BD5ACA /* EventsDAOTests.swift */,
+				A2CE84BB1F8F5F8100BD5ACA /* Info.plist */,
+			);
+			path = EventsDAOTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +194,24 @@
 			productReference = A2CE843B1F8F525400BD5ACA /* PersistenceLayerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A2CE84B61F8F5F8100BD5ACA /* EventsDAOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2CE84BF1F8F5F8100BD5ACA /* Build configuration list for PBXNativeTarget "EventsDAOTests" */;
+			buildPhases = (
+				A2CE84B31F8F5F8100BD5ACA /* Sources */,
+				A2CE84B41F8F5F8100BD5ACA /* Frameworks */,
+				A2CE84B51F8F5F8100BD5ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2CE84BE1F8F5F8100BD5ACA /* PBXTargetDependency */,
+			);
+			name = EventsDAOTests;
+			productName = EventsDAOTests;
+			productReference = A2CE84B71F8F5F8100BD5ACA /* EventsDAOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,9 +224,14 @@
 				TargetAttributes = {
 					A2CE84311F8F525300BD5ACA = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					A2CE843A1F8F525400BD5ACA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A2CE84B61F8F5F8100BD5ACA = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -170,6 +251,7 @@
 			targets = (
 				A2CE84311F8F525300BD5ACA /* PersistenceLayer */,
 				A2CE843A1F8F525400BD5ACA /* PersistenceLayerTests */,
+				A2CE84B61F8F5F8100BD5ACA /* EventsDAOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,10 +261,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CE84AE1F8F5A2100BD5ACA /* create_load.sql in Resources */,
+				A2CE84AD1F8F5A2100BD5ACA /* DBConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A2CE84391F8F525400BD5ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CE84B51F8F5F8100BD5ACA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,6 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CE84B21F8F5E6800BD5ACA /* Schedule.swift in Sources */,
+				A2CE84B01F8F5DD800BD5ACA /* Events.swift in Sources */,
+				A2CE84C51F8F62D300BD5ACA /* BaseDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +301,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A2CE84B31F8F5F8100BD5ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CE84C31F8F628800BD5ACA /* Schedule.swift in Sources */,
+				A2CE84C21F8F628400BD5ACA /* Events.swift in Sources */,
+				A2CE84BA1F8F5F8100BD5ACA /* EventsDAOTests.swift in Sources */,
+				A2CE84C61F8F62D300BD5ACA /* BaseDAO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -214,6 +319,11 @@
 			isa = PBXTargetDependency;
 			target = A2CE84311F8F525300BD5ACA /* PersistenceLayer */;
 			targetProxy = A2CE843D1F8F525400BD5ACA /* PBXContainerItemProxy */;
+		};
+		A2CE84BE1F8F5F8100BD5ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2CE84311F8F525300BD5ACA /* PersistenceLayer */;
+			targetProxy = A2CE84BD1F8F5F8100BD5ACA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +444,10 @@
 		A2CE84471F8F525400BD5ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,14 +461,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = darko.PersistenceLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/module";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT)/PersistenceLayer/**";
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
 		A2CE84481F8F525400BD5ACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -368,14 +490,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = darko.PersistenceLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/module";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT)/PersistenceLayer/**";
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
 		A2CE844A1F8F525400BD5ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCYK33GWAM;
 				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
@@ -390,12 +516,55 @@
 		A2CE844B1F8F525400BD5ACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCYK33GWAM;
 				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darko.PersistenceLayerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2CE84C01F8F5F8100BD5ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCYK33GWAM;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = EventsDAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "";
+				MODULEMAP_PRIVATE_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2CE84C11F8F5F8100BD5ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCYK33GWAM;
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = EventsDAOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "";
+				MODULEMAP_PRIVATE_FILE = "";
+				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsDAOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,6 +596,15 @@
 			buildConfigurations = (
 				A2CE844A1F8F525400BD5ACA /* Debug */,
 				A2CE844B1F8F525400BD5ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2CE84BF1F8F5F8100BD5ACA /* Build configuration list for PBXNativeTarget "EventsDAOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2CE84C01F8F5F8100BD5ACA /* Debug */,
+				A2CE84C11F8F5F8100BD5ACA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

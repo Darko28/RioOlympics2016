@@ -1,15 +1,18 @@
 //
-//  PersistenceLayerTests.swift
-//  PersistenceLayerTests
+//  EventsDAOTests.swift
+//  EventsDAOTests
 //
 //  Created by Darko on 2017/10/12.
 //  Copyright © 2017年 Darko. All rights reserved.
 //
 
+import Foundation
 import XCTest
-//@testable import PersistenceLayer
 
-class PersistenceLayerTests: XCTestCase {
+class EventsDAOTests: XCTestCase {
+    
+    var dao: EventsDAO!
+    var theEvents: Events?
     
     override func setUp() {
         super.setUp()
