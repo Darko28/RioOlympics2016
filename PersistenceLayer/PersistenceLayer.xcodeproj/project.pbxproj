@@ -14,13 +14,19 @@
 		A299E1AC1F8F8D0F0089AEE9 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AB1F8F8D0F0089AEE9 /* BaseDAO.swift */; };
 		A299E1AE1F8F8E0B0089AEE9 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */; };
 		A299E1B01F8F97FC0089AEE9 /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AF1F8F97FC0089AEE9 /* EventsDAO.swift */; };
-		A2CB9A191F8F89C6003B444A /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */; };
-		A2CB9A1E1F8F89C6003B444A /* PersistenceLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CB9A1D1F8F89C6003B444A /* PersistenceLayerTests.swift */; };
 		A2CB9A201F8F89C6003B444A /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CB9A121F8F89C6003B444A /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D7C5A11F8F9FF40082640D /* EventsDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5A01F8F9FF40082640D /* EventsDAOTests.swift */; };
+		A2D7C5A31F8F9FF40082640D /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */; };
+		A2D7C5A91F8FA0450082640D /* EventsDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AF1F8F97FC0089AEE9 /* EventsDAO.swift */; };
+		A2D7C5AA1F8FA0560082640D /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1A71F8F8C230089AEE9 /* Events.swift */; };
+		A2D7C5AB1F8FA2880082640D /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AB1F8F8D0F0089AEE9 /* BaseDAO.swift */; };
+		A2D7C5AC1F8FA2AA0082640D /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */; };
+		A2D7C5AD1F8FA3910082640D /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A299E1A31F8F8B470089AEE9 /* DBConfig.plist */; };
+		A2D7C5AE1F8FA3940082640D /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = A299E1A41F8F8B470089AEE9 /* create_load.sql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2CB9A1A1F8F89C6003B444A /* PBXContainerItemProxy */ = {
+		A2D7C5A41F8F9FF40082640D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2CB9A061F8F89C6003B444A /* Project object */;
 			proxyType = 1;
@@ -40,9 +46,9 @@
 		A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CB9A121F8F89C6003B444A /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
 		A2CB9A131F8F89C6003B444A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2CB9A181F8F89C6003B444A /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2CB9A1D1F8F89C6003B444A /* PersistenceLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLayerTests.swift; sourceTree = "<group>"; };
-		A2CB9A1F1F8F89C6003B444A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D7C59E1F8F9FF40082640D /* EventsDAOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsDAOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7C5A01F8F9FF40082640D /* EventsDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDAOTests.swift; sourceTree = "<group>"; };
+		A2D7C5A21F8F9FF40082640D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +59,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CB9A151F8F89C6003B444A /* Frameworks */ = {
+		A2D7C59B1F8F9FF40082640D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CB9A191F8F89C6003B444A /* PersistenceLayer.framework in Frameworks */,
+				A2D7C5A31F8F9FF40082640D /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A2CB9A111F8F89C6003B444A /* PersistenceLayer */,
-				A2CB9A1C1F8F89C6003B444A /* PersistenceLayerTests */,
+				A2D7C59F1F8F9FF40082640D /* EventsDAOTests */,
 				A2CB9A101F8F89C6003B444A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */,
-				A2CB9A181F8F89C6003B444A /* PersistenceLayerTests.xctest */,
+				A2D7C59E1F8F9FF40082640D /* EventsDAOTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,13 +112,13 @@
 			path = PersistenceLayer;
 			sourceTree = "<group>";
 		};
-		A2CB9A1C1F8F89C6003B444A /* PersistenceLayerTests */ = {
+		A2D7C59F1F8F9FF40082640D /* EventsDAOTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2CB9A1D1F8F89C6003B444A /* PersistenceLayerTests.swift */,
-				A2CB9A1F1F8F89C6003B444A /* Info.plist */,
+				A2D7C5A01F8F9FF40082640D /* EventsDAOTests.swift */,
+				A2D7C5A21F8F9FF40082640D /* Info.plist */,
 			);
-			path = PersistenceLayerTests;
+			path = EventsDAOTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,22 +153,22 @@
 			productReference = A2CB9A0F1F8F89C6003B444A /* PersistenceLayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2CB9A171F8F89C6003B444A /* PersistenceLayerTests */ = {
+		A2D7C59D1F8F9FF40082640D /* EventsDAOTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2CB9A261F8F89C6003B444A /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
+			buildConfigurationList = A2D7C5A61F8F9FF40082640D /* Build configuration list for PBXNativeTarget "EventsDAOTests" */;
 			buildPhases = (
-				A2CB9A141F8F89C6003B444A /* Sources */,
-				A2CB9A151F8F89C6003B444A /* Frameworks */,
-				A2CB9A161F8F89C6003B444A /* Resources */,
+				A2D7C59A1F8F9FF40082640D /* Sources */,
+				A2D7C59B1F8F9FF40082640D /* Frameworks */,
+				A2D7C59C1F8F9FF40082640D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2CB9A1B1F8F89C6003B444A /* PBXTargetDependency */,
+				A2D7C5A51F8F9FF40082640D /* PBXTargetDependency */,
 			);
-			name = PersistenceLayerTests;
-			productName = PersistenceLayerTests;
-			productReference = A2CB9A181F8F89C6003B444A /* PersistenceLayerTests.xctest */;
+			name = EventsDAOTests;
+			productName = EventsDAOTests;
+			productReference = A2D7C59E1F8F9FF40082640D /* EventsDAOTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +186,7 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					A2CB9A171F8F89C6003B444A = {
+					A2D7C59D1F8F9FF40082640D = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -199,7 +205,7 @@
 			projectRoot = "";
 			targets = (
 				A2CB9A0E1F8F89C6003B444A /* PersistenceLayer */,
-				A2CB9A171F8F89C6003B444A /* PersistenceLayerTests */,
+				A2D7C59D1F8F9FF40082640D /* EventsDAOTests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,10 +220,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CB9A161F8F89C6003B444A /* Resources */ = {
+		A2D7C59C1F8F9FF40082640D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D7C5AE1F8FA3940082640D /* create_load.sql in Resources */,
+				A2D7C5AD1F8FA3910082640D /* DBConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,21 +244,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CB9A141F8F89C6003B444A /* Sources */ = {
+		A2D7C59A1F8F9FF40082640D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CB9A1E1F8F89C6003B444A /* PersistenceLayerTests.swift in Sources */,
+				A2D7C5AA1F8FA0560082640D /* Events.swift in Sources */,
+				A2D7C5A11F8F9FF40082640D /* EventsDAOTests.swift in Sources */,
+				A2D7C5AC1F8FA2AA0082640D /* DBHelper.swift in Sources */,
+				A2D7C5A91F8FA0450082640D /* EventsDAO.swift in Sources */,
+				A2D7C5AB1F8FA2880082640D /* BaseDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2CB9A1B1F8F89C6003B444A /* PBXTargetDependency */ = {
+		A2D7C5A51F8F9FF40082640D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A2CB9A0E1F8F89C6003B444A /* PersistenceLayer */;
-			targetProxy = A2CB9A1A1F8F89C6003B444A /* PBXContainerItemProxy */;
+			targetProxy = A2D7C5A41F8F9FF40082640D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,30 +427,28 @@
 			};
 			name = Release;
 		};
-		A2CB9A271F8F89C6003B444A /* Debug */ = {
+		A2D7C5A71F8F9FF40082640D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCYK33GWAM;
-				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
+				INFOPLIST_FILE = EventsDAOTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darko.PersistenceLayerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsDAOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A2CB9A281F8F89C6003B444A /* Release */ = {
+		A2D7C5A81F8F9FF40082640D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCYK33GWAM;
-				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
+				INFOPLIST_FILE = EventsDAOTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darko.PersistenceLayerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsDAOTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,11 +476,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2CB9A261F8F89C6003B444A /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
+		A2D7C5A61F8F9FF40082640D /* Build configuration list for PBXNativeTarget "EventsDAOTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2CB9A271F8F89C6003B444A /* Debug */,
-				A2CB9A281F8F89C6003B444A /* Release */,
+				A2D7C5A71F8F9FF40082640D /* Debug */,
+				A2D7C5A81F8F9FF40082640D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

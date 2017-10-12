@@ -12,6 +12,11 @@ import SQLite3
 
 public class EventsDAO: BaseDAO {
     
+    public static let sharedInstance: EventsDAO = {
+        let instance = EventsDAO()
+        return instance
+    }()
+    
     public func create(model: Events) -> Int {
         
         if self.openDB() {
