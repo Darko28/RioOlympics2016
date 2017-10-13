@@ -1,15 +1,18 @@
 //
-//  BusinessLogicLayerTests.swift
-//  BusinessLogicLayerTests
+//  ScheduleBLTests.swift
+//  ScheduleBLTests
 //
-//  Created by Darko on 2017/10/12.
+//  Created by Darko on 2017/10/13.
 //  Copyright © 2017年 Darko. All rights reserved.
 //
 
 import XCTest
-@testable import BusinessLogicLayer
+import PersistenceLayer
 
-class BusinessLogicLayerTests: XCTestCase {
+class ScheduleBLTests: XCTestCase {
+    
+    var bl: ScheduleBL!
+    var theSchedule: Schedule!
     
     override func setUp() {
         super.setUp()

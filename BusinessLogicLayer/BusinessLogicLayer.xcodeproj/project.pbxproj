@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2CE84601F8F526700BD5ACA /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84561F8F526700BD5ACA /* BusinessLogicLayer.framework */; };
-		A2CE84651F8F526700BD5ACA /* BusinessLogicLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE84641F8F526700BD5ACA /* BusinessLogicLayerTests.swift */; };
 		A2CE84671F8F526700BD5ACA /* BusinessLogicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CE84591F8F526700BD5ACA /* BusinessLogicLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D7C5B81F9082A30082640D /* EventsBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5B71F9082A30082640D /* EventsBLTests.swift */; };
+		A2D7C5BA1F9082A30082640D /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84561F8F526700BD5ACA /* BusinessLogicLayer.framework */; };
+		A2D7C5C11F9087220082640D /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5C01F9087220082640D /* EventsBL.swift */; };
+		A2D7C5C21F90874F0082640D /* EventsBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5C01F9087220082640D /* EventsBL.swift */; };
+		A2D7C5C41F9088C80082640D /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5C31F9088C80082640D /* ScheduleBL.swift */; };
+		A2D7C5CC1F9088ED0082640D /* ScheduleBLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5CB1F9088ED0082640D /* ScheduleBLTests.swift */; };
+		A2D7C5CE1F9088ED0082640D /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CE84561F8F526700BD5ACA /* BusinessLogicLayer.framework */; };
+		A2D7C5D41F908CA20082640D /* ScheduleBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D7C5C31F9088C80082640D /* ScheduleBL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A2CE84611F8F526700BD5ACA /* PBXContainerItemProxy */ = {
+		A2D7C5BB1F9082A30082640D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2CE844D1F8F526700BD5ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2CE84551F8F526700BD5ACA;
+			remoteInfo = BusinessLogicLayer;
+		};
+		A2D7C5CF1F9088ED0082640D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2CE844D1F8F526700BD5ACA /* Project object */;
 			proxyType = 1;
@@ -26,9 +39,14 @@
 		A2CE84561F8F526700BD5ACA /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2CE84591F8F526700BD5ACA /* BusinessLogicLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLogicLayer.h; sourceTree = "<group>"; };
 		A2CE845A1F8F526700BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2CE845F1F8F526700BD5ACA /* BusinessLogicLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2CE84641F8F526700BD5ACA /* BusinessLogicLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLogicLayerTests.swift; sourceTree = "<group>"; };
-		A2CE84661F8F526700BD5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D7C5B51F9082A30082640D /* EventsBLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsBLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7C5B71F9082A30082640D /* EventsBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsBLTests.swift; sourceTree = "<group>"; };
+		A2D7C5B91F9082A30082640D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2D7C5C01F9087220082640D /* EventsBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsBL.swift; sourceTree = "<group>"; };
+		A2D7C5C31F9088C80082640D /* ScheduleBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleBL.swift; sourceTree = "<group>"; };
+		A2D7C5C91F9088ED0082640D /* ScheduleBLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScheduleBLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D7C5CB1F9088ED0082640D /* ScheduleBLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleBLTests.swift; sourceTree = "<group>"; };
+		A2D7C5CD1F9088ED0082640D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,11 +57,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CE845C1F8F526700BD5ACA /* Frameworks */ = {
+		A2D7C5B21F9082A30082640D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE84601F8F526700BD5ACA /* BusinessLogicLayer.framework in Frameworks */,
+				A2D7C5BA1F9082A30082640D /* BusinessLogicLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D7C5C61F9088ED0082640D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D7C5CE1F9088ED0082640D /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				A2CE84581F8F526700BD5ACA /* BusinessLogicLayer */,
-				A2CE84631F8F526700BD5ACA /* BusinessLogicLayerTests */,
+				A2D7C5B61F9082A30082640D /* EventsBLTests */,
+				A2D7C5CA1F9088ED0082640D /* ScheduleBLTests */,
 				A2CE84571F8F526700BD5ACA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				A2CE84561F8F526700BD5ACA /* BusinessLogicLayer.framework */,
-				A2CE845F1F8F526700BD5ACA /* BusinessLogicLayerTests.xctest */,
+				A2D7C5B51F9082A30082640D /* EventsBLTests.xctest */,
+				A2D7C5C91F9088ED0082640D /* ScheduleBLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,17 +101,28 @@
 			children = (
 				A2CE84591F8F526700BD5ACA /* BusinessLogicLayer.h */,
 				A2CE845A1F8F526700BD5ACA /* Info.plist */,
+				A2D7C5C01F9087220082640D /* EventsBL.swift */,
+				A2D7C5C31F9088C80082640D /* ScheduleBL.swift */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
 		};
-		A2CE84631F8F526700BD5ACA /* BusinessLogicLayerTests */ = {
+		A2D7C5B61F9082A30082640D /* EventsBLTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2CE84641F8F526700BD5ACA /* BusinessLogicLayerTests.swift */,
-				A2CE84661F8F526700BD5ACA /* Info.plist */,
+				A2D7C5B71F9082A30082640D /* EventsBLTests.swift */,
+				A2D7C5B91F9082A30082640D /* Info.plist */,
 			);
-			path = BusinessLogicLayerTests;
+			path = EventsBLTests;
+			sourceTree = "<group>";
+		};
+		A2D7C5CA1F9088ED0082640D /* ScheduleBLTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2D7C5CB1F9088ED0082640D /* ScheduleBLTests.swift */,
+				A2D7C5CD1F9088ED0082640D /* Info.plist */,
+			);
+			path = ScheduleBLTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,22 +157,40 @@
 			productReference = A2CE84561F8F526700BD5ACA /* BusinessLogicLayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A2CE845E1F8F526700BD5ACA /* BusinessLogicLayerTests */ = {
+		A2D7C5B41F9082A30082640D /* EventsBLTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2CE846D1F8F526700BD5ACA /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTests" */;
+			buildConfigurationList = A2D7C5BF1F9082A30082640D /* Build configuration list for PBXNativeTarget "EventsBLTests" */;
 			buildPhases = (
-				A2CE845B1F8F526700BD5ACA /* Sources */,
-				A2CE845C1F8F526700BD5ACA /* Frameworks */,
-				A2CE845D1F8F526700BD5ACA /* Resources */,
+				A2D7C5B11F9082A30082640D /* Sources */,
+				A2D7C5B21F9082A30082640D /* Frameworks */,
+				A2D7C5B31F9082A30082640D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2CE84621F8F526700BD5ACA /* PBXTargetDependency */,
+				A2D7C5BC1F9082A30082640D /* PBXTargetDependency */,
 			);
-			name = BusinessLogicLayerTests;
-			productName = BusinessLogicLayerTests;
-			productReference = A2CE845F1F8F526700BD5ACA /* BusinessLogicLayerTests.xctest */;
+			name = EventsBLTests;
+			productName = EventsBLTests;
+			productReference = A2D7C5B51F9082A30082640D /* EventsBLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2D7C5C81F9088ED0082640D /* ScheduleBLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2D7C5D11F9088ED0082640D /* Build configuration list for PBXNativeTarget "ScheduleBLTests" */;
+			buildPhases = (
+				A2D7C5C51F9088ED0082640D /* Sources */,
+				A2D7C5C61F9088ED0082640D /* Frameworks */,
+				A2D7C5C71F9088ED0082640D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2D7C5D01F9088ED0082640D /* PBXTargetDependency */,
+			);
+			name = ScheduleBLTests;
+			productName = ScheduleBLTests;
+			productReference = A2D7C5C91F9088ED0082640D /* ScheduleBLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -148,9 +205,14 @@
 				TargetAttributes = {
 					A2CE84551F8F526700BD5ACA = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
-					A2CE845E1F8F526700BD5ACA = {
+					A2D7C5B41F9082A30082640D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					A2D7C5C81F9088ED0082640D = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -169,7 +231,8 @@
 			projectRoot = "";
 			targets = (
 				A2CE84551F8F526700BD5ACA /* BusinessLogicLayer */,
-				A2CE845E1F8F526700BD5ACA /* BusinessLogicLayerTests */,
+				A2D7C5B41F9082A30082640D /* EventsBLTests */,
+				A2D7C5C81F9088ED0082640D /* ScheduleBLTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +245,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CE845D1F8F526700BD5ACA /* Resources */ = {
+		A2D7C5B31F9082A30082640D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D7C5C71F9088ED0082640D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,24 +266,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D7C5C41F9088C80082640D /* ScheduleBL.swift in Sources */,
+				A2D7C5C11F9087220082640D /* EventsBL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2CE845B1F8F526700BD5ACA /* Sources */ = {
+		A2D7C5B11F9082A30082640D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CE84651F8F526700BD5ACA /* BusinessLogicLayerTests.swift in Sources */,
+				A2D7C5C21F90874F0082640D /* EventsBL.swift in Sources */,
+				A2D7C5B81F9082A30082640D /* EventsBLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2D7C5C51F9088ED0082640D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D7C5D41F908CA20082640D /* ScheduleBL.swift in Sources */,
+				A2D7C5CC1F9088ED0082640D /* ScheduleBLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2CE84621F8F526700BD5ACA /* PBXTargetDependency */ = {
+		A2D7C5BC1F9082A30082640D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A2CE84551F8F526700BD5ACA /* BusinessLogicLayer */;
-			targetProxy = A2CE84611F8F526700BD5ACA /* PBXContainerItemProxy */;
+			targetProxy = A2D7C5BB1F9082A30082640D /* PBXContainerItemProxy */;
+		};
+		A2D7C5D01F9088ED0082640D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2CE84551F8F526700BD5ACA /* BusinessLogicLayer */;
+			targetProxy = A2D7C5CF1F9088ED0082640D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +421,7 @@
 		A2CE846B1F8F526700BD5ACA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = darko.BusinessLogicLayer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +444,7 @@
 		A2CE846C1F8F526700BD5ACA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,28 +463,58 @@
 			};
 			name = Release;
 		};
-		A2CE846E1F8F526700BD5ACA /* Debug */ = {
+		A2D7C5BD1F9082A30082640D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCYK33GWAM;
-				INFOPLIST_FILE = BusinessLogicLayerTests/Info.plist;
+				INFOPLIST_FILE = EventsBLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darko.BusinessLogicLayerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsBLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A2CE846F1F8F526700BD5ACA /* Release */ = {
+		A2D7C5BE1F9082A30082640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCYK33GWAM;
+				INFOPLIST_FILE = EventsBLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darko.EventsBLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2D7C5D21F9088ED0082640D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HCYK33GWAM;
-				INFOPLIST_FILE = BusinessLogicLayerTests/Info.plist;
+				INFOPLIST_FILE = ScheduleBLTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darko.BusinessLogicLayerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = darko.ScheduleBLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2D7C5D31F9088ED0082640D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HCYK33GWAM;
+				INFOPLIST_FILE = ScheduleBLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = darko.ScheduleBLTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,11 +542,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2CE846D1F8F526700BD5ACA /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTests" */ = {
+		A2D7C5BF1F9082A30082640D /* Build configuration list for PBXNativeTarget "EventsBLTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2CE846E1F8F526700BD5ACA /* Debug */,
-				A2CE846F1F8F526700BD5ACA /* Release */,
+				A2D7C5BD1F9082A30082640D /* Debug */,
+				A2D7C5BE1F9082A30082640D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2D7C5D11F9088ED0082640D /* Build configuration list for PBXNativeTarget "ScheduleBLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D7C5D21F9088ED0082640D /* Debug */,
+				A2D7C5D31F9088ED0082640D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

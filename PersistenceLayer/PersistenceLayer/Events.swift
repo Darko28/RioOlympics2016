@@ -10,7 +10,7 @@ import Foundation
 
 public class Events: NSObject {
 
-    public var eventId: NSString?
+    public var eventID: NSString?
     public var eventName: NSString?
     public var eventIcon: NSString?
     public var keyInfo: NSString?
