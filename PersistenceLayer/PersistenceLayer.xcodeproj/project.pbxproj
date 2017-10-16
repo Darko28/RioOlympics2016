@@ -108,9 +108,9 @@
 				A299E1A71F8F8C230089AEE9 /* Events.swift */,
 				A299E1A91F8F8C920089AEE9 /* Schedule.swift */,
 				A299E1AB1F8F8D0F0089AEE9 /* BaseDAO.swift */,
-				A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */,
 				A299E1AF1F8F97FC0089AEE9 /* EventsDAO.swift */,
 				A2D7C5AF1F9080F50082640D /* ScheduleDAO.swift */,
+				A299E1AD1F8F8E0B0089AEE9 /* DBHelper.swift */,
 			);
 			path = PersistenceLayer;
 			sourceTree = "<group>";

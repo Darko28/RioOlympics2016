@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I5X-xA-m45">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="4YO-hI-ubv">
             <objects>
                 <viewController id="Qxv-Q1-ZWi" customClass="HomeViewController" customModule="RioOlympics2016" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="M0u-f3-RFQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="Home-TabBarIcon" id="Lt2-ea-Swi"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-TabBarIcon" id="Lt2-ea-Swi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AH-u6-8Lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,11 +51,11 @@
             </objects>
             <point key="canvasLocation" x="-656" y="104"/>
         </scene>
-        <!--Item-->
+        <!--Events-->
         <scene sceneID="smX-Rd-mrj">
             <objects>
                 <navigationController id="wP9-wq-6Cn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="Events-TabBarIcon" id="5ma-Qf-3PY"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="Events-TabBarIcon" id="5ma-Qf-3PY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U6k-gb-PaV">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PLN-YW-3lj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="PLN-YW-3lj">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PLN-YW-3lj" id="bQW-8O-v8Q">
@@ -129,6 +129,7 @@
                                 <size key="customSize" width="106" height="106"/>
                                 <connections>
                                     <outlet property="imageView" destination="k9P-JN-rG0" id="Gex-Qc-LYK"/>
+                                    <segue destination="T1v-Z7-RvX" kind="show" identifier="showDetail" id="TRX-EF-X5U"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -138,9 +139,6 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="ZfE-kp-eiM"/>
-                    <connections>
-                        <segue destination="T1v-Z7-RvX" kind="show" id="2KI-QT-9Y9"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvF-8K-UqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +182,7 @@
                                 <rect key="frame" x="20" y="405" width="374" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -199,7 +197,7 @@
                                 <rect key="frame" x="20" y="571" width="374" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -219,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="1665" y="2"/>
         </scene>
-        <!--Item-->
+        <!--CountDown-->
         <scene sceneID="61f-DH-A4c">
             <objects>
                 <viewController id="HzZ-tP-hIB" customClass="CountDownViewController" customModule="RioOlympics2016" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,7 +240,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F53-qr-bYK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oZ8-aE-JKF"/>
+                    <tabBarItem key="tabBarItem" title="CountDown" image="CountDown-TabBarIcon" id="oZ8-aE-JKF"/>
                     <connections>
                         <outlet property="lblCountDown" destination="189-tw-Jdd" id="dio-o5-rxv"/>
                     </connections>
@@ -251,11 +249,11 @@
             </objects>
             <point key="canvasLocation" x="-656.52173913043487" y="916.304347826087"/>
         </scene>
-        <!--Item-->
+        <!--Schedule-->
         <scene sceneID="pl7-la-TtT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eB9-dL-KpQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3KW-A8-5oe"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="Schedule-TabBarIcon" id="3KW-A8-5oe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="czi-zW-cmi">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -272,8 +270,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CountDown-TabBarIcon" width="30" height="30"/>
         <image name="Events-TabBarIcon" width="30" height="30"/>
         <image name="Home-TabBarIcon" width="30" height="30"/>
         <image name="Home-bg" width="213" height="378"/>
+        <image name="Schedule-TabBarIcon" width="30" height="30"/>
     </resources>
 </document>

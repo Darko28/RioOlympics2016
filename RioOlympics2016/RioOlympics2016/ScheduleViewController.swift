@@ -32,7 +32,8 @@ class ScheduleViewController: UITableViewController {
             
             let keys = self.data.allKeys as NSArray
             // sort the keys
-            self.arrayGameDateList = keys.sortedArray(using: "compare:") as NSArray
+//            self.arrayGameDateList = keys.sortedArray(using: "compare:") as NSArray
+            self.arrayGameDateList = keys.sortedArray(using: #selector(NSNumber.compare(_:))) as NSArray
         }
         
     }

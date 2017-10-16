@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PersistenceLayer
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let queue1 = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+//        dispatch_async(queue1, {
+//            DBHelper.initDB()
+//        })
+        
+        
+//        let queue = DispatchQueue.global(qos: DispatchQoS.default.qosClass)
+//        DispatchQueue.async(exectute: queue) {
+//            // load and initilize database, improve efficiency and user experience
+//            DBHelper.initDB()
+//        }
+        
+        DispatchQueue.global().async {
+            DBHelper.initDB()
+        }
+        
         return true
     }
 

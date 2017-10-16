@@ -24,11 +24,11 @@ class EventsDetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.imgEventIcon.image = UIImage(named: self.event.eventIcon as! String)
-        self.lblEventName.text = self.event.eventName as! String
-        self.txtViewBasicsInfo.text = self.event.basicsInfo as! String
-        self.txtViewKeyInfo.text = self.event.keyInfo as! String
-        self.txtViewOlympicInfo.text = self.event.olympicsInfo as! String
+        self.imgEventIcon.image = UIImage(named: self.event.eventIcon! as String)
+        self.lblEventName.text = self.event.eventName as String?
+        self.txtViewBasicsInfo.text = self.event.basicsInfo as String?
+        self.txtViewKeyInfo.text = self.event.keyInfo as String?
+        self.txtViewOlympicInfo.text = self.event.olympicsInfo as String?
         
     }
 

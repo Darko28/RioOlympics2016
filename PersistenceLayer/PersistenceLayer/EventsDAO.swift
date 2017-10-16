@@ -21,7 +21,7 @@ public class EventsDAO: BaseDAO {
         
         if self.openDB() {
             
-            let sql = "INSERT INTO EVENTS (EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo) VALUES (?,?,?,?,?)"
+            let sql = "INSERT INTO Events (EventName, EventIcon, KeyInfo, BasicsInfo, OlympicInfo) VALUES (?,?,?,?,?)"
             
             var statement: OpaquePointer? = nil
             
@@ -79,52 +79,131 @@ public class EventsDAO: BaseDAO {
         return 0
     }
     
-//    public func findAll() -> NSMutableArray {
-//        
-//        let listData = NSMutableArray()
-//        
-//        if self.openDB() {
-//            
-//            let qsql = "SELECT eventName, eventIcon, keyInfo, basicsInfo, olympicInfo, eventID FROM Events"
-//            
-//            var statement: OpaquePointer? = nil
-//            
-//            // preprocess
-//            if sqlite3_prepare_v2(db, qsql.cString(using: String.Encoding.utf8)!, -1, &statement, nil) == SQLITE_OK {
-//                
-//                // execute
-//                while sqlite3_step(statement) == SQLITE_ROW {
-//                    
-//                    let events = Events()
-//                    
+    public func findAll() -> NSMutableArray {
+        
+        let listData = NSMutableArray()
+        
+        if self.openDB() {
+            
+            let qsql = "SELECT eventName, eventIcon, keyInfo, basicsInfo, olympicInfo, eventID FROM Events"
+            
+            var statement: OpaquePointer? = nil
+            
+            // preprocess
+            if sqlite3_prepare_v2(db, qsql.cString(using: String.Encoding.utf8)!, -1, &statement, nil) == SQLITE_OK {
+                
+                // execute
+                while sqlite3_step(statement) == SQLITE_ROW {
+                    
+                    let events = Events()
+                    
 //                    let cEventName = UnsafePointer<Int8>(sqlite3_column_text(statement, 0))
 //                    events.eventName = String.cString(cEventName)
-//                    let cEventIcon = UnsafePointer
-//                    
-//                    let cKeyInfo = UnsafePointer
-//                    
-//                    let cBasicsInfo = UnsafePointer
-//                    
-//                    let cOlympicInfo = UnsafePointer
-//                    events.olympicsInfo = String.cString(cOlympicInfo)
-//                    
-//                    events.eventID = Int(sqlite3_column_int(statement, 5))
-//                    
-//                    listData.add(events)
-//                }
-//            }
-//            sqlite3_finalize(statement)
-//            sqlite3_close(db)
-//        }
-//        return listData
-//    }
-//    
-//    
-//    public func findById(model: Events) -> Events? {
-//        
-//    }
-//    
-//    public func modify(model: Events) -> Int {
-//        
-//    }
+                    
+                    var cEventIcon = UnsafePointer(sqlite3_column_text(statement, 1))?.withMemoryRebound(to: Int8.self, capacity: 0) { $0.pointee }
+                    events.eventIcon = NSString.init(cString: &cEventIcon!, encoding: String.Encoding.utf8.rawValue)
+
+                    if let cKeyInfo = UnsafeRawPointer.init(sqlite3_column_text(statement, 2)) {
+                        let uKeyInfo = cKeyInfo.bindMemory(to: CChar.self, capacity: 0)
+                        events.keyInfo = NSString.init(cString: uKeyInfo, encoding: String.Encoding.utf8.rawValue)
+                    }
+
+                    let cBasicsInfo = UnsafeRawPointer(sqlite3_column_text(statement, 3))
+                    events.basicsInfo = NSString.init(cString: (cBasicsInfo?.bindMemory(to: CChar.self, capacity: 0))!, encoding: String.Encoding.utf8.rawValue)
+
+                    if let cOlympicInfo = UnsafeRawPointer(sqlite3_column_text(statement, 4)) {
+                        events.olympicsInfo = String(validatingUTF8: cOlympicInfo.bindMemory(to: CChar.self, capacity: 0))! as NSString
+                    }
+
+                    events.eventID = Int(sqlite3_column_int(statement, 5))
+                    
+                    listData.add(events)
+                }
+            }
+            sqlite3_finalize(statement)
+            sqlite3_close(db)
+        }
+        return listData
+    }
+    
+    
+    public func findById(model: Events) -> Events? {
+        
+        if self.openDB() {
+            
+            let qsql = "SELECT eventName,eventIcon,keyInfo,basicsInfo,olympicInfo,eventID FROM Events where EventID =?"
+            var statement: OpaquePointer? = nil
+            
+            //预处理过程
+            if sqlite3_prepare_v2(db, qsql.cString(using: String.Encoding.utf8)!, -1, &statement, nil) == SQLITE_OK {
+                //绑定参数开始
+                sqlite3_bind_int(statement, 1, Int32(model.eventID!))
+                //执行
+                while sqlite3_step(statement) == SQLITE_ROW {
+                    
+                    let events = Events()
+                    
+                    //                    let cEventName = UnsafePointer<Int8>(sqlite3_column_text(statement, 0))
+                    //                    events.eventName = String.cString(cEventName)
+                    
+                    var cEventIcon = UnsafePointer(sqlite3_column_text(statement, 1))?.withMemoryRebound(to: Int8.self, capacity: 0) { $0.pointee }
+                    events.eventIcon = NSString.init(cString: &cEventIcon!, encoding: String.Encoding.utf8.rawValue)
+                    
+                    if let cKeyInfo = UnsafeRawPointer.init(sqlite3_column_text(statement, 2)) {
+                        let uKeyInfo = cKeyInfo.bindMemory(to: CChar.self, capacity: 0)
+                        events.keyInfo = NSString.init(cString: uKeyInfo, encoding: String.Encoding.utf8.rawValue)
+                    }
+                    
+                    let cBasicsInfo = UnsafeRawPointer(sqlite3_column_text(statement, 3))
+                    events.basicsInfo = NSString.init(cString: (cBasicsInfo?.bindMemory(to: CChar.self, capacity: 0))!, encoding: String.Encoding.utf8.rawValue)
+                    
+                    if let cOlympicInfo = UnsafeRawPointer(sqlite3_column_text(statement, 4)) {
+                        events.olympicsInfo = String(validatingUTF8: cOlympicInfo.bindMemory(to: CChar.self, capacity: 0))! as NSString
+                    }
+                    
+                    events.eventID = Int(sqlite3_column_int(statement, 5))
+                    
+                    sqlite3_finalize(statement)
+                    sqlite3_close(db)
+                    
+                    return events
+                }
+                sqlite3_finalize(statement)
+                sqlite3_close(db)
+            }
+        }
+        
+        return nil
+    }
+    
+    public func modify(model: Events) -> Int {
+        
+        if self.openDB() {
+            
+            let sql = "UPDATE Events set eventName=?, eventIcon=?, keyInfo=?, basicsInfo=?, olympicInfo=? where eventID=?"
+            
+            var statement: OpaquePointer? = nil
+            
+            if sqlite3_prepare_v2(db, sql.cString(using: String.Encoding.utf8), -1, &statement, nil) == SQLITE_OK {
+                // bind parameter
+                sqlite3_bind_text(statement, 1, model.eventName!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
+                sqlite3_bind_text(statement, 2, model.eventIcon!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
+                sqlite3_bind_text(statement, 3, model.keyInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
+                sqlite3_bind_text(statement, 5, model.basicsInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
+                sqlite3_bind_text(statement, 4, model.olympicsInfo!.cString(using: String.Encoding.utf8.rawValue), -1, nil)
+                sqlite3_bind_int(statement, 6, Int32(model.eventID!))
+                
+                // execute insertion
+                if sqlite3_step(statement) != SQLITE_DONE {
+                    sqlite3_finalize(statement)
+                    sqlite3_close(db)
+                    assert(false, "modify data failed")
+                }
+            }
+            sqlite3_finalize(statement)
+            sqlite3_close(db)
+        }
+        return 0
+    }
+    
 }
